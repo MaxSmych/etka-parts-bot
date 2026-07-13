@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+data/
+*.sqlite3
+*.log
+# Персональный заводской build-sheet машины
+VIN.txt

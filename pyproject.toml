@@ -1,0 +1,41 @@
+[project]
+name = "etka-bot"
+version = "0.1.0"
+description = "Telegram-бот для поиска автозапчастей: ETKA, Autodoc, Emex, WB, Claude-анализ."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiogram>=3.27,<4",
+    "aiohttp-socks>=0.11.0",
+    "av>=14.0,<16",
+    "httpx>=0.28.1,<1",
+    "python-dotenv>=1.0.1,<2",
+    "socksio>=1.0.0",
+    "tzdata>=2026.2",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15,<2",
+    "pytest>=8.3,<9",
+    "ruff>=0.9,<1",
+]
+
+[project.scripts]
+etka-bot = "etka_bot.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["etka_bot"]
