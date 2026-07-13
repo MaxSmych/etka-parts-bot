@@ -46,11 +46,7 @@ def build_stt_client(settings: Settings) -> OpenAIClient | None:
         return None
     return OpenAIClient(
         api_key=settings.openai_api_key,
-        model="gpt-4o-mini",
-        image_model="dall-e-3",
         stt_model=settings.openai_stt_model,
-        tts_model="tts-1",
-        tts_voice="nova",
     )
 
 

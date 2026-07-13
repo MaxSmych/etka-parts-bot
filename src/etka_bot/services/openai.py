@@ -14,11 +14,7 @@ class OpenAIClient:
     """Minimal async OpenAI client — only STT (Whisper) for this bot."""
 
     api_key: str
-    model: str
-    image_model: str
     stt_model: str
-    tts_model: str
-    tts_voice: str
     base_url: str = "https://api.openai.com/v1"
 
     async def transcribe_audio(self, audio: bytes, audio_format: str) -> str:
