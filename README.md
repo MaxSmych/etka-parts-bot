@@ -1,5 +1,7 @@
 # 🔧 ETKA Parts Bot
 
+**English** · [Русский](README.ru.md)
+
 > Telegram bot that turns a **part name or an OE number** into a real, VIN-accurate
 > answer for **VAG cars** (VW · Audi · Škoda · SEAT): it resolves the genuine OE
 > number from **online ETKA by VIN**, pulls **cross-brand analogs and live prices**
